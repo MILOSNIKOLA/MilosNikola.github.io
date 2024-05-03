@@ -9,6 +9,7 @@ setInterval(() => {
     let minutes = document.getElementById('minutes');
     let secondes = document.getElementById('seconds');
     let ampm = document.getElementById('ampm');
+    // const  = document.getElements('.p')
 
     // digits time indicator
     let hh = document.getElementById('hh');
@@ -53,3 +54,7 @@ setInterval(() => {
     dotM.style.transform = `rotate(${m * 6}deg)`;
     dotS.style.transform = `rotate(${s * 6}deg)`;
 }, 1000);
+
+document.querySelector('click', () => {
+    tourner.style.background = 'black'
+})
