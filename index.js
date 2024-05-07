@@ -9,7 +9,7 @@ setInterval(() => {
     let minutes = document.getElementById('minutes');
     let secondes = document.getElementById('seconds');
     let ampm = document.getElementById('ampm');
-    
+
 
     // digits time indicator
     let hh = document.getElementById('hh');
@@ -57,7 +57,7 @@ setInterval(() => {
 
 const reci = document.querySelector('.p');
 
-reci.style.background =''
+// reci.style.background =''
 
 // reci.addEventListener('mouseleave', function() {
 //     // Actions à effectuer lorsque la souris quitte l'élément
@@ -66,15 +66,18 @@ reci.style.background =''
 // });
 
 // Ajout d'un gestionnaire d'événements pour 'mouseenter'
-reci.addEventListener('mouseenter', function() {
+
+reci.addEventListener('click', () => {
     // Ajout de la classe CSS pour l'effet "hover"
     reci.classList.toggle('reci');
 });
 
 // Ajout d'un gestionnaire d'événements pour 'mouseleave'
-reci.addEventListener('mouseleave', function() {
-    // Suppression de la classe CSS pour désactiver l'effet "hover"
-// reci {
+
+// reci.addEventListener('mouseleave', function() {
+// })
+//     // Suppression de la classe CSS pour désactiver l'effet "hover"
+// reci.addEventListener('click', () => {
 //     reci.classList.toggle('reci');
 // });
 
