@@ -9,7 +9,7 @@ setInterval(() => {
     let minutes = document.getElementById('minutes');
     let secondes = document.getElementById('seconds');
     let ampm = document.getElementById('ampm');
-    // const  = document.getElements('.p')
+    
 
     // digits time indicator
     let hh = document.getElementById('hh');
@@ -55,6 +55,44 @@ setInterval(() => {
     dotS.style.transform = `rotate(${s * 6}deg)`;
 }, 1000);
 
-document.querySelector('click', () => {
-    tourner.style.background = 'black'
-})
+const reci = document.querySelector('.p');
+
+reci.style.background =''
+
+// reci.addEventListener('mouseleave', function() {
+//     // Actions à effectuer lorsque la souris quitte l'élément
+//     reci.style.backgroundColor = '#fff'; // Réinitialisation de la couleur de fond
+//     reci.style.color = '#ffffff6c'; // Réinitialisation de la couleur du texte
+// });
+
+// Ajout d'un gestionnaire d'événements pour 'mouseenter'
+reci.addEventListener('mouseenter', function() {
+    // Ajout de la classe CSS pour l'effet "hover"
+    reci.classList.toggle('reci');
+});
+
+// Ajout d'un gestionnaire d'événements pour 'mouseleave'
+reci.addEventListener('mouseleave', function() {
+    // Suppression de la classe CSS pour désactiver l'effet "hover"
+// reci {
+//     reci.classList.toggle('reci');
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
