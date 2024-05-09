@@ -56,7 +56,7 @@ setInterval(() => {
 }, 1000);
 
 const reci = document.querySelector('.p');
-
+const rece = document.querySelector('.p:hover')
 // reci.style.background =''
 
 // reci.addEventListener('mouseleave', function() {
@@ -71,6 +71,10 @@ reci.addEventListener('click', () => {
     // Ajout de la classe CSS pour l'effet "hover"
     reci.classList.toggle('reci');
 });
+
+rece.addEventListener('click', () => {
+    rece.classList.toggle('reci');
+})
 
 // Ajout d'un gestionnaire d'événements pour 'mouseleave'
 

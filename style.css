@@ -207,6 +207,17 @@ h1,p {
     align-items: center; */
 }
 
+/* .p:hover {
+  filter: hue-rotate(-60deg);
+  text-shadow: 2px 2px blue;
+  color: goldenrod;
+  background-color: rgb(123, 95, 160);
+  padding: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+/*} */
+
 button {
     display: flex;
     justify-content: center;
@@ -231,5 +242,7 @@ button {
 .reci:hover {
   background: #ffffff;
   color: #002bff;
-  transition: .50s ease;
+  transition: .50s ease-in-out;
+  
 }
+
