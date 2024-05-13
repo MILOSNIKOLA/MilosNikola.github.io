@@ -56,7 +56,7 @@ setInterval(() => {
 }, 1000);
 
 const reci = document.querySelector('.p');
-const rece = document.querySelector('.p:hover')
+
 // reci.style.background =''
 
 // reci.addEventListener('mouseleave', function() {
@@ -72,9 +72,6 @@ reci.addEventListener('click', () => {
     reci.classList.toggle('reci');
 });
 
-rece.addEventListener('click', () => {
-    rece.classList.toggle('reci');
-})
 
 // Ajout d'un gestionnaire d'événements pour 'mouseleave'
 

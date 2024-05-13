@@ -199,9 +199,10 @@ h1,p {
 .p {
     filter: hue-rotate(-60deg);
     text-shadow: 2px 2px blue;
-    color: goldenrod;
-    background-color: rgb(123, 95, 160);
-    
+    color: white;
+    background-color: rgb(172, 76, 76);
+    padding: 3px;
+    border-radius: 3px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -240,9 +241,16 @@ button {
 
 
 .reci:hover {
-  background: #ffffff;
-  color: #002bff;
+  background: #0000008e;
+ 
   transition: .50s ease-in-out;
   
 }
 
+.p:hover {
+  padding: 6px;
+  border-radius: 8px;
+  color: #d0dfd0 !important;
+  text-shadow: none;
+  font-weight: 2500;
+}
