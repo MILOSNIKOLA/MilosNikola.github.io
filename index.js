@@ -1,7 +1,7 @@
 
-let interval = setInterval(() => {
-    // location.href = 'https://fr.linkedin.com/in/dragan-manojlovic-76985310b?trk=people-guest_people_search-card'
-}, 8000)
+// let interval = setInterval(() => {
+//     // location.href = 'https://fr.linkedin.com/in/dragan-manojlovic-76985310b?trk=people-guest_people_search-card'
+// }, 8000)
 
 setInterval(() => {
     // get time indicator elements
@@ -57,7 +57,7 @@ setInterval(() => {
 
 const reci = document.querySelector('.p');
 
-// reci.style.background =''
+
 
 // reci.addEventListener('mouseleave', function() {
 //     // Actions à effectuer lorsque la souris quitte l'élément
@@ -70,8 +70,16 @@ const reci = document.querySelector('.p');
 reci.addEventListener('click', () => {
     // Ajout de la classe CSS pour l'effet "hover"
     reci.classList.toggle('reci');
+    console.log('aaaaaaaaa');
+    let interval = setInterval(() => {
+        location.href = 'https://fr.linkedin.com/in/dragan-manojlovic-76985310b?trk=people-guest_people_search-card'
+    }, 1000)
+    
 });
 
+// after.addEventListener('click', () => {
+//     console.log('aaaaaaaaa');
+// });
 
 // Ajout d'un gestionnaire d'événements pour 'mouseleave'
 

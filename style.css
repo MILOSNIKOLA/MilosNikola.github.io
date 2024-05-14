@@ -250,7 +250,13 @@ button {
 .p:hover {
   padding: 6px;
   border-radius: 8px;
-  color: #d0dfd0 !important;
+  color: #ffffff !important;
   text-shadow: none;
   font-weight: 2500;
+  background-color: rgb(0, 0, 0);
 }
+
+
+/* .p::after {
+
+} */
