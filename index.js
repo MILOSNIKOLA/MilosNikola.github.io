@@ -57,8 +57,6 @@ setInterval(() => {
 
 const reci = document.querySelector('.p');
 
-
-
 // reci.addEventListener('mouseleave', function() {
 //     // Actions à effectuer lorsque la souris quitte l'élément
 //     reci.style.backgroundColor = '#fff'; // Réinitialisation de la couleur de fond
@@ -77,30 +75,23 @@ reci.addEventListener('click', () => {
     
 });
 
-// after.addEventListener('click', () => {
-//     console.log('aaaaaaaaa');
-// });
+window.addEventListener('resize', () => {
 
-// Ajout d'un gestionnaire d'événements pour 'mouseleave'
+let media480 = window.matchMedia("(max-width: 480px)")
 
-// reci.addEventListener('mouseleave', function() {
+// console.log(media480);
+
+if(media480.matches) {
+    console.log("L'ecran fait au moins 480px de large");
+}
+
+// let media1000 = window.matchMedia("(max-width: 1000px)") 
+    
+//     if(media1000.matches){
+//         console.log("L'ecran fait au moins 1000px de large");
+//     }
+
 // })
-//     // Suppression de la classe CSS pour désactiver l'effet "hover"
-// reci.addEventListener('click', () => {
-//     reci.classList.toggle('reci');
-// });
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
