@@ -75,27 +75,4 @@ reci.addEventListener('click', () => {
     
 });
 
-window.addEventListener('resize', () => {
-
-let media480 = window.matchMedia("(max-width: 480px)")
-
-// console.log(media480);
-
-if(media480.matches) {
-    console.log("L'ecran fait au moins 480px de large");
-}
-
-// let media1000 = window.matchMedia("(max-width: 1000px)") 
-    
-//     if(media1000.matches){
-//         console.log("L'ecran fait au moins 1000px de large");
-//     }
-
-// })
-
-
-
-
-
-
 
