@@ -276,6 +276,10 @@ button {
     stroke-dasharray: 314; /* Ajusté en proportion avec la réduction de la taille */
   }
 
+  #time .circle svg .circle:nth-child(1) {
+    stroke-dashoffset: 500;
+  }
+
   #time div {
     font-size: 1rem; /* Réduit de 1.5rem à 1rem */
   }
@@ -297,16 +301,18 @@ button {
     top: 16px;
   }
 
-  svg .prvikrug{
+  svg .prvikrug, .drugikrug, .trecikrug{
     /* cx:46; 
     cy:50;  */
     r:50;
   }
 
-  svg .prvikrugg {
+  svg .prvikrugg , .drugikrugg , .trecikrugg{
     r:70;
     stroke: var(--color);
     stroke-dasharray: 640;
-    
   }
+
+
+
 } 
