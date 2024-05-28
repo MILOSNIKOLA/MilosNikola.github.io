@@ -352,3 +352,75 @@ button {
   stroke-dasharray: 440;
 }
 } 
+
+
+@media screen and (max-width: 460px) {
+ 
+  #time div {
+    font-size: .7rem; /* Réduit de 1.5rem à 1rem vreme*/
+
+
+  }
+
+  .dots::before {
+    
+    top: 35px;
+  }
+
+  svg .prvikrug, .drugikrug, .trecikrug{
+    /* cx:46; 
+    cy:50;  */
+    r:35;
+  }
+
+  svg .prvikrugg {
+    r:50;
+    stroke: var(--color);
+    stroke-dasharray: 340;
+  }
+
+  svg .drugikrugg {
+    r:50;
+    stroke: var(--color);
+    stroke-dasharray: 340;
+  }
+
+/*   svg .trecikrugg {
+    r:50;
+    stroke-dasharray: 340;
+  } */
+}
+
+#time .circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  /* margin: 0;
+  padding: 0; */
+  justify-content: center;
+  align-items: center;
+}
+
+#time .circle svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+
+#time .circle svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke: #070707;
+  stroke-width: 3px;
+  transform: translate(5px, 5px);
+}
+
+#time .circle svg circle:nth-child(2) {
+  stroke: var(--color);
+  stroke-dasharray: 440;
+}
+
+
