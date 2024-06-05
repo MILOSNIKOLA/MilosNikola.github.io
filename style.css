@@ -354,42 +354,68 @@ button {
 } 
 
 
+
 @media screen and (max-width: 460px) {
- 
-  #time div {
-    font-size: .7rem; /* Réduit de 1.5rem à 1rem vreme*/
-
-
+  
+  #time .circle {
+    width: 150px; /* Réduit de 150px à 100px */
+    height: 150px; /* Réduit de 150px à 100px */
+    /* margin: 0 10px; */
   }
 
-  .dots::before {
+  #time .circle svg {
+    width: 150px; /* Réduit de 150px à 100px */
+    height: 150px; /* Réduit de 150px à 100px */
     
-    top: 35px;
+  }
+
+  #time .circle svg circle:nth-child(2) {
+    stroke-dasharray: 314; /* Ajusté en proportion avec la réduction de la taille */
+  }
+
+  #time .circle svg .circle:nth-child(1) {
+    stroke-dashoffset: 500;
+  }
+
+  #time div {
+    font-size: .6rem; /* Réduit de 1.5rem à 1rem vreme*/
+  }
+
+  #time div span {
+    font-size: 0.4rem; /* Réduit de 0.5rem à 0.4rem */
+  }
+
+  #time .ap {
+    font-size: 0.1rem; /* Réduit de 1rem à 0.8rem */
+  }
+
+
+
+  .dots::before {
+    width: 10px; /* Réduit de 15px à 10px */
+    height: 10px; /* Réduit de 15px à 10px */
+    position: absolute;
+    top: 20px;
   }
 
   svg .prvikrug, .drugikrug, .trecikrug{
     /* cx:46; 
     cy:50;  */
-    r:35;
+    r:50;
   }
 
   svg .prvikrugg {
-    r:50;
+    r:70;
     stroke: var(--color);
-    stroke-dasharray: 340;
+    stroke-dasharray: 640;
   }
 
-  svg .drugikrugg {
-    r:50;
-    stroke: var(--color);
-    stroke-dasharray: 340;
-  }
+/* svg .drugikrugg {
+  /* stroke-dasharray: 140; 
+    r:70;
 
-/*   svg .trecikrugg {
-    r:50;
-    stroke-dasharray: 340;
-  } */
-}
+    
+} */
 
 #time .circle {
   position: relative;
@@ -414,7 +440,7 @@ button {
   height: 100%;
   fill: transparent;
   stroke: #070707;
-  stroke-width: 3px;
+  stroke-width: 4px;
   transform: translate(5px, 5px);
 }
 
@@ -422,5 +448,6 @@ button {
   stroke: var(--color);
   stroke-dasharray: 440;
 }
-
-
+}
+ 
+ 
