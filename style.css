@@ -1,5 +1,6 @@
-h1,p {
-    text-align: center;
+h1,
+p {
+  text-align: center;
 }
 
 /*** first **/
@@ -30,7 +31,7 @@ h1,p {
   justify-content: space-evenly !important;
   color: #fff;
   /* justify-content: center;*/
-} 
+}
 
 #time .circle {
   position: relative;
@@ -102,13 +103,13 @@ h1,p {
   height: 15px;
   background: var(--color);
   border-radius: 50%;
-  box-shadow: 0 0 20px var(--color), 0 0 60px var(--color  );
+  box-shadow: 0 0 20px var(--color), 0 0 60px var(--color);
 }
 
 
 
 
- body {
+body {
   /* margin: 0;
   padding: 0;  */
   /* width: 100%; */
@@ -116,97 +117,105 @@ h1,p {
   /* display: block; */
   /* flex-direction: row; */
   justify-content: center;
-  align-items: center; 
-  
-}  
+  align-items: center;
+
+}
 
 
 
 .glow-on-hover {
-    width: 240px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    
-    position: absolute !important;
-    
-    justify-content: center;
-    z-index: 0;
-    border-radius: 10px;
-    
+  width: 240px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+
+  position: absolute !important;
+
+  justify-content: center;
+  z-index: 0;
+  border-radius: 10px;
+
 }
 
 .glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
 
-    display: flex !important;
-    justify-content: center;
-    background-size: 400%;
+  display: flex !important;
+  justify-content: center;
+  background-size: 400%;
 
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-    
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+
 }
 
 .glow-on-hover:active {
-    color: #000
+  color: #000
 }
 
 .glow-on-hover:active:after {
-    background: transparent;
+  background: transparent;
 }
 
 .glow-on-hover:hover:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .glow-on-hover {
   background-color: #232527;
   position: relative;
 }
- 
+
 .glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #11111141;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #11111141;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .p {
-    filter: hue-rotate(-60deg);
-    text-shadow: 2px 2px blue;
-    color: white;
-    background-color: rgb(172, 76, 76);
-    padding: 3px;
-    border-radius: 3px;
-    /* display: flex;
+  filter: hue-rotate(-60deg);
+  text-shadow: 2px 2px blue;
+  color: white;
+  background-color: rgb(172, 76, 76);
+  padding: 3px;
+  border-radius: 3px;
+  /* display: flex;
     justify-content: center;
     align-items: center; */
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 /* .p:hover {
@@ -221,15 +230,15 @@ h1,p {
 /*} */
 
 button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: #232527;
-    /* background-color: chartreuse; */
-    /* width: 100%; */
-    /* position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #232527;
+  /* background-color: chartreuse; */
+  /* width: 100%; */
+  /* position: absolute;
     top: 200px; */
-    text-align: center;
+  text-align: center;
 }
 
 .button {
@@ -237,15 +246,15 @@ button {
   justify-content: center;
   position: relative;
   top: 100px;
-  
+
 }
 
 
 .reci:hover {
   background: #0000008e;
- 
+
   transition: .50s ease-in-out;
-  
+
 }
 
 .p:hover {
@@ -261,19 +270,24 @@ button {
 @media screen and (max-width: 460px) and (max-height: 864px) {
 
   #time .circle {
-    width: 150px; /* Réduit de 150px à 100px */
-    height: 150px; /* Réduit de 150px à 100px */
+    width: 150px;
+    /* Réduit de 150px à 100px */
+    height: 150px;
+    /* Réduit de 150px à 100px */
     /* margin: 0 10px; */
   }
 
   #time .circle svg {
-    width: 150px; /* Réduit de 150px à 100px */
-    height: 150px; /* Réduit de 150px à 100px */
-    
+    width: 150px;
+    /* Réduit de 150px à 100px */
+    height: 150px;
+    /* Réduit de 150px à 100px */
+
   }
 
   #time .circle svg circle:nth-child(2) {
-    stroke-dasharray: 314; /* Ajusté en proportion avec la réduction de la taille */
+    stroke-dasharray: 314;
+    /* Ajusté en proportion avec la réduction de la taille */
   }
 
   #time .circle svg .circle:nth-child(1) {
@@ -281,96 +295,108 @@ button {
   }
 
   #time div {
-    font-size: 1rem; /* Réduit de 1.5rem à 1rem vreme*/
+    font-size: 1rem;
+    /* Réduit de 1.5rem à 1rem vreme*/
   }
 
   #time div span {
-    font-size: 0.4rem; /* Réduit de 0.5rem à 0.4rem */
+    font-size: 0.4rem;
+    /* Réduit de 0.5rem à 0.4rem */
   }
 
   #time .ap {
-    font-size: 0.rem; /* Réduit de 1rem à 0.8rem */
+    font-size: 0.rem;
+    /* Réduit de 1rem à 0.8rem */
   }
 
 
 
   .dots::before {
-    width: 10px; /* Réduit de 15px à 10px */
-    height: 10px; /* Réduit de 15px à 10px */
+    width: 10px;
+    /* Réduit de 15px à 10px */
+    height: 10px;
+    /* Réduit de 15px à 10px */
     position: absolute;
     top: 16px;
   }
 
-  svg .prvikrug, .drugikrug, .trecikrug{
+  svg .prvikrug,
+  .drugikrug,
+  .trecikrug {
     /* cx:46; 
     cy:50;  */
-    r:50;
+    r: 50;
   }
 
   svg .prvikrugg {
-    r:70;
+    r: 70;
     stroke: var(--color);
     stroke-dasharray: 640;
   }
 
-/* svg .drugikrugg {
+  /* svg .drugikrugg {
   /* stroke-dasharray: 140; 
     r:70;
 
     
 } */
 
-#time .circle {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  /* margin: 0;
+  #time .circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    /* margin: 0;
   padding: 0; */
-  justify-content: center;
-  align-items: center;
-}
+    justify-content: center;
+    align-items: center;
+  }
 
-#time .circle svg {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  transform: rotate(270deg);
-}
+  #time .circle svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+  }
 
-#time .circle svg circle {
-  width: 100%;
-  height: 100%;
-  fill: transparent;
-  stroke: #070707;
-  stroke-width: 4px;
-  transform: translate(5px, 5px);
-}
+  #time .circle svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #070707;
+    stroke-width: 4px;
+    transform: translate(5px, 5px);
+  }
 
-#time .circle svg circle:nth-child(2) {
-  stroke: var(--color);
-  stroke-dasharray: 440;
+  #time .circle svg circle:nth-child(2) {
+    stroke: var(--color);
+    stroke-dasharray: 440;
+  }
 }
-} 
 
 
 
 @media screen and (max-width: 460px) {
-  
+
   #time .circle {
-    width: 150px; /* Réduit de 150px à 100px */
-    height: 150px; /* Réduit de 150px à 100px */
+    width: 150px;
+    /* Réduit de 150px à 100px */
+    height: 150px;
+    /* Réduit de 150px à 100px */
     /* margin: 0 10px; */
   }
 
   #time .circle svg {
-    width: 150px; /* Réduit de 150px à 100px */
-    height: 150px; /* Réduit de 150px à 100px */
-    
+    width: 150px;
+    /* Réduit de 150px à 100px */
+    height: 150px;
+    /* Réduit de 150px à 100px */
+
   }
 
   #time .circle svg circle:nth-child(2) {
-    stroke-dasharray: 314; /* Ajusté en proportion avec la réduction de la taille */
+    stroke-dasharray: 314;
+    /* Ajusté en proportion avec la réduction de la taille */
   }
 
   #time .circle svg .circle:nth-child(1) {
@@ -378,76 +404,85 @@ button {
   }
 
   #time div {
-    font-size: .6rem; /* Réduit de 1.5rem à 1rem vreme*/
+    font-size: .6rem;
+    /* Réduit de 1.5rem à 1rem vreme*/
   }
 
   #time div span {
-    font-size: 0.4rem; /* Réduit de 0.5rem à 0.4rem */
+    font-size: 0.4rem;
+    /* Réduit de 0.5rem à 0.4rem */
   }
 
   #time .ap {
-    font-size: 0.1rem; /* Réduit de 1rem à 0.8rem */
+    font-size: 0.1rem;
+    /* Réduit de 1rem à 0.8rem */
   }
 
 
 
   .dots::before {
-    width: 10px; /* Réduit de 15px à 10px */
-    height: 10px; /* Réduit de 15px à 10px */
+    width: 5px;
+    /* Réduit de 15px à 10px */
+    height: 5px;
+    /* Réduit de 15px à 10px */
     position: absolute;
-    top: 20px;
+    top: 43px;
   }
 
-  svg .prvikrug, .drugikrug, .trecikrug{
+  svg .prvikrug,
+  .drugikrug,
+  .trecikrug {
     /* cx:46; 
     cy:50;  */
-    r:50;
+    r: 30;
   }
 
   svg .prvikrugg {
-    r:70;
+    r: 70;
     stroke: var(--color);
     stroke-dasharray: 640;
   }
 
-/* svg .drugikrugg {
+  svg .trecikrugg {
+    r:50;
+    stroke-dashoffset: 1;
+  }
+  /* svg .drugikrugg {
   /* stroke-dasharray: 140; 
     r:70;
 
     
 } */
 
-#time .circle {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  /* margin: 0;
+  #time .circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    /* margin: 0;
   padding: 0; */
-  justify-content: center;
-  align-items: center;
-}
+    justify-content: center;
+    align-items: center;
+  }
 
-#time .circle svg {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  transform: rotate(270deg);
-}
+  #time .circle svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+  }
 
-#time .circle svg circle {
-  width: 100%;
-  height: 100%;
-  fill: transparent;
-  stroke: #070707;
-  stroke-width: 4px;
-  transform: translate(5px, 5px);
-}
+  #time .circle svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #070707;
+    stroke-width: 4px;
+    transform: translate(5px, 5px);
+  }
 
-#time .circle svg circle:nth-child(2) {
-  stroke: var(--color);
-  stroke-dasharray: 440;
+  #time .circle svg circle:nth-child(2) {
+    stroke: var(--color);
+    stroke-dasharray: 440;
+  }
 }
-}
- 
- 
