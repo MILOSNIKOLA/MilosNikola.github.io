@@ -55,9 +55,12 @@ setInterval(() => {
     dotS.style.transform = `rotate(${s * 6}deg)`;
 }, 1000);
 
-let media460 = window.matchMedia("(min-width: 460)");
+const media460 = () => {
+    let media460 = window.matchMedia("(min-width: 460)");
+    console.log(media460);
+}
 
-console.log(media460);
+
 
 
 const reci = document.querySelector('.p');
@@ -81,3 +84,4 @@ reci.addEventListener('click', () => {
 });
 
 
+ 

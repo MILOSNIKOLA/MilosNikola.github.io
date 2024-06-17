@@ -387,9 +387,9 @@ button {
   }
 
   #time .circle svg {
-    width: 150px;
+    width: 100px;
     /* Réduit de 150px à 100px */
-    height: 150px;
+    height: 100px;
     /* Réduit de 150px à 100px */
 
   }
@@ -453,6 +453,12 @@ button {
 
     
 } */
+
+svg {
+  /* width: 100px !important; */
+  flex: content;
+
+}
 
   #time .circle {
     position: relative;
