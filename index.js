@@ -10,7 +10,6 @@ setInterval(() => {
     let secondes = document.getElementById('seconds');
     let ampm = document.getElementById('ampm');
 
-
     // digits time indicator
     let hh = document.getElementById('hh');
     let mm = document.getElementById('mm');
@@ -53,26 +52,13 @@ setInterval(() => {
     dotH.style.transform = `rotate(${h * 30}deg)`;
     dotM.style.transform = `rotate(${m * 6}deg)`;
     dotS.style.transform = `rotate(${s * 6}deg)`;
+
+    
+
 }, 1000);
 
-const media460 = () => {
-    // set time and label
-    hours.innerHTML = h + 'Hours';
-    minutes.innerHTML = m + 'Minutes';
-    secondes.innerHTML = s + 'Seconds';
-    ampm.innerHTML = ap;
 
-    // set time circular indicator
-    hh.style.strokeDashoffset = 440 - (440 * h) / 12;
-    mm.style.strokeDashoffset = 440 - (440 * m) / 60;
-    ss.style.strokeDashoffset = 440 - (440 * s) / 60;
-
-    // set dot time position indicator
-    dotH.style.transform = `rotate(${h * 30}deg)`;
-    dotM.style.transform = `rotate(${m * 6}deg)`;
-    dotS.style.transform = `rotate(${s * 6}deg)`;
-}
-
+    
 
 
 
