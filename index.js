@@ -57,8 +57,24 @@ setInterval(() => {
 
 }, 1000);
 
+const media460 = window.matchMedia('(min-width: 460)') 
 
-    
+    console.log(media460);
+
+    if (media460.matches) {
+        console.log("l'ecran fait au moins 460");
+        
+    }
+
+
+// const media460 = window.matchMedia("('min-width: 460')");
+// media460.addEventListener("change", (event) => {
+//   if (event.matches) {
+//     console.log("Now in landscape orientation");
+//   } 
+// });
+
+
 
 
 
