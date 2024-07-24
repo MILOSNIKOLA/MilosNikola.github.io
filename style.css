@@ -429,8 +429,8 @@ button {
 
 .jeu {
  position: relative;
- right: -50%;
- top: -25%;
+ right: -47.5%;
+ top: -45%;
 }
 
 .quiz {
@@ -440,16 +440,27 @@ button {
   text-align: center;
   background: #002bff;
   
-  border: 10px solid #002bff;
-  border-radius: 20px;
+  padding:0 10px;
 }
 
 .quiz:hover {
-  border: 15px solid #002bff;
-  transition: ease .7s;
+  border: 10px solid #002bff;
+  transition: ease 1.3s;
+  border-radius:0 50px;
 }
 
+.quiz a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: solid;
+  text-transform: capitalize;
+}
 
+.quiz:hover{
+  background: red;
+  border: 10px solid #b61616;
+  transition:1.3s ease-in;
+}
 
 
 
