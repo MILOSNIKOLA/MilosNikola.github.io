@@ -425,3 +425,53 @@ button {
 
 
 }
+
+
+.jeu {
+ position: relative;
+ right: -50%;
+ top: -25%;
+}
+
+.quiz {
+  
+  position: absolute;
+  display: flex;
+  text-align: center;
+  background: #002bff;
+  
+  border: 10px solid #002bff;
+  border-radius: 20px;
+}
+
+.quiz:hover {
+  border: 15px solid #002bff;
+  transition: ease .7s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
