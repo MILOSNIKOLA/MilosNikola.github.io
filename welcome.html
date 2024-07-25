@@ -1,11 +1,33 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="welcome.css">
+    <title>Langues défilantes</title>
 </head>
 <body>
-    <h1></h1>
+    <div class="language-container">
+        <div class="language" id="english">
+           
+            <button onclick="selectLanguage('english')">English</button>
+        </div>
+        <div class="language" id="french">
+            
+            <button onclick="selectLanguage('french')">Français</button>
+        </div>
+        <div class="language" id="serbian">
+           
+            <button onclick="selectLanguage('serbian')">Српски</button>
+        </div>
+    </div>
+
+    <div id="content">
+        <p data-en="Welcome to my website!" data-fr="Bienvenue sur mon site web!" data-sr="Добродошли на мој вебсајт!">Bienvenue sur mon site web!</p>
+    </div>
+
+    <script src="welcome.js"></script>
 </body>
 </html>
