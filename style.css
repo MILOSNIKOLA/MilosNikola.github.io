@@ -446,7 +446,8 @@ button {
 .quiz:hover {
   border: 10px solid #002bff;
   transition: ease 1.3s;
-  border-radius:0 40px;
+  border-radius:10px 40px;
+  
 }
 
 .quiz a {
@@ -454,11 +455,11 @@ button {
   font-size: 25px;
   text-decoration: solid;
   text-transform: capitalize;
-  margin-left: 10px;
+  margin-left: -30px;
 }
 
 .quiz a:hover {
-  font-size: 20px;
+  font-size: 17px;
   position: relative;
   top: 7px;
   transition: 1.3s ease;
@@ -466,8 +467,8 @@ button {
 
 .quiz:hover{
   box-shadow: #000;
-  border: 5px solid #463e3e;
-  transition:1.3s ease-in;
+  border: 10px solid #463e3e;
+  transition:1s ease-in;
 
 }
 
@@ -475,6 +476,7 @@ span {
   background: url(./fast-forward.gif) no-repeat;
   position: relative;
   top: -3px;
+  right: 60px;
   height: 40px;
   width: 35px;
   border-radius: 20px;
