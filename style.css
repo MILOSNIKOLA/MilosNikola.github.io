@@ -429,63 +429,43 @@ button {
 
 .jeu {
  position: relative;
- right: -45%;
+ right: -47.5%;
  top: -45%;
+ height: 40px;
+ width: 100px;
+ margin-left: -30px;
+
 }
 
 .quiz {
-  
   position: absolute;
-  display: flex;
   text-align: center;
-  /* background: #002bff; */
-  
-  padding:0 10px;
-}
-
-.quiz:hover {
-  border: 10px solid #002bff;
-  transition: ease 1.3s;
-  border-radius:10px 40px;
+  display: flex;
   
 }
 
 .quiz a {
-  color: #fff;
+  color: #4e3e3e;
   font-size: 25px;
-  text-decoration: solid;
-  text-transform: capitalize;
-  margin-left: -30px;
+  text-align: center;
+  padding-left: 10px;
 }
 
 .quiz a:hover {
-  font-size: 17px;
-  position: relative;
-  top: 7px;
-  transition: 1.3s ease;
-}
-
-.quiz:hover{
-  box-shadow: #000;
-  border: 10px solid #463e3e;
-  transition:1s ease-in;
-
+  color: blue;
+  transition: ease 1s;
 }
 
 span {
+  display: inline-block;
   background: url(./fast-forward.gif) no-repeat;
-  position: relative;
-  top: -3px;
-  right: 60px;
+  border-radius: 60%; 
   height: 40px;
-  width: 35px;
-  border-radius: 20px;
+  width: 40px;
+  /* margin-left:-0px; */
+  background-color: #ffffff;
+  animation: arrow 1s linear infinite;
 }
-
-/* .quiz:hoverspav:hover {
-  
-} */
-
 
 
 
