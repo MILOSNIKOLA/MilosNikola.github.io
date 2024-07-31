@@ -57,34 +57,7 @@ setInterval(() => {
 
 }, 1000);
 
-const media460 = window.matchMedia('(min-width: 460)') 
-
-    console.log(media460);
-
-    if (media460.matches) {
-        console.log("l'ecran fait au moins 460");
-        
-    }
-
-
-// const media460 = window.matchMedia("('min-width: 460')");
-// media460.addEventListener("change", (event) => {
-//   if (event.matches) {
-//     console.log("Now in landscape orientation");
-//   } 
-// });
-
-
-
-
-
 const reci = document.querySelector('.p');
-
-// reci.addEventListener('mouseleave', function() {
-//     // Actions à effectuer lorsque la souris quitte l'élément
-//     reci.style.backgroundColor = '#fff'; // Réinitialisation de la couleur de fond
-//     reci.style.color = '#ffffff6c'; // Réinitialisation de la couleur du texte
-// });
 
 // Ajout d'un gestionnaire d'événements pour 'mouseenter'
 
@@ -97,5 +70,19 @@ reci.addEventListener('click', () => {
     }, 1000)
     
 });
+
+
+const media460 = window.matchMedia('(min-width: 460)') 
+
+    console.log(media460);
+
+    if (media460.matches) {
+        console.log("l'ecran fait au moins 460");
+        
+    }
+
+
+
+
 
 

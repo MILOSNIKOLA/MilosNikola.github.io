@@ -275,21 +275,62 @@ button {
   background-color: rgb(0, 0, 0);
 }
 
+.jeu {
+  position: relative;
+  right: -47.5%;
+  top: -45%;
+  height: 40px;
+  width: 100px;
+  margin-left: -30px;
+ 
+ }
+ 
+ .quiz {
+   position: absolute;
+   text-align: center;
+   display: flex;
+   
+ }
+ 
+ .quiz a {
+   color: #4e3e3e;
+   font-size: 25px;
+   text-align: center;
+   padding-left: 10px;
+ }
+ 
+ .quiz a:hover {
+   color: rgb(255, 255, 255);
+   transition: ease 1s;
+ }
+ 
+ span {
+   display: inline-block;
+   background: url(./fast-forward.gif) no-repeat;
+   border-radius: 60%; 
+   height: 40px;
+   width: 40px;
+   /* margin-left:-0px; */
+   background-color: #ffffff;
+   animation: arrow 1s linear infinite;
+ }
+ 
+
 
 @media screen and (max-width: 460px) and (max-height: 864px) {
 
   #time .circle {
-    width: 150px;
+    width: 120px;
     /* Réduit de 150px à 100px */
-    height: 150px;
+    height: 120px;
     /* Réduit de 150px à 100px */
     /* margin: 0 10px; */
   }
 
   #time .circle svg {
-    width: 150px;
+    width: 120px;
     /* Réduit de 150px à 100px */
-    height: 150px;
+    height: 120px;
     /* Réduit de 150px à 100px */
 
   }
@@ -321,12 +362,12 @@ button {
 
 
   .dots::before {
-    width: 10px;
+    width: 7px;
     /* Réduit de 15px à 10px */
-    height: 10px;
+    height: 7px;
     /* Réduit de 15px à 10px */
     position: absolute;
-    top: 16px;
+    top: 26px;
   }
 
   svg .prvikrug,
@@ -334,11 +375,11 @@ button {
   .trecikrug {
     /* cx:46; 
     cy:50;  */
-    r: 50;
+    r: 45;
   }
 
   svg .prvikrugg {
-    r: 70;
+    r: 60;
     stroke: var(--color);
     stroke-dasharray: 640;
   }
@@ -352,8 +393,8 @@ button {
 
   #time .circle {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     display: flex;
     /* margin: 0;
   padding: 0; */
@@ -363,8 +404,8 @@ button {
 
   #time .circle svg {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     transform: rotate(270deg);
   }
 
@@ -385,87 +426,6 @@ button {
 
 
 
-@media screen and (max-width: 460px) {
-
-  #time div {
-    font-size: 90%;
-    /* Réduit de 1.5rem à 1rem vreme*/
-  }
-    
-  .dots::before {
-    content: '';
-    position: absolute;
-    top: 34px;
-    width: 5px;
-    height: 5px;
-    background: var(--color);
-    border-radius: 50%;
-    box-shadow: 0 0 20px var(--color), 0 0 60px var(--color);
-  }
-
-  #time .circle svg circle:nth-child(2) {
-    stroke: var(--color);
-    stroke-dasharray: 440;
-  }
-
-  svg .prvikrug,
-  .drugikrug,
-  .trecikrug {
-    /* cx:46; 
-    cy:50;  */
-    r: 38;
-  }
-
-  svg .prvikrugg , .drugikrugg , .trecikrugg{
-    r: 50;
-    
-  }
-  
-  
-
-
-}
-
-
-.jeu {
- position: relative;
- right: -47.5%;
- top: -45%;
- height: 40px;
- width: 100px;
- margin-left: -30px;
-
-}
-
-.quiz {
-  position: absolute;
-  text-align: center;
-  display: flex;
-  
-}
-
-.quiz a {
-  color: #4e3e3e;
-  font-size: 25px;
-  text-align: center;
-  padding-left: 10px;
-}
-
-.quiz a:hover {
-  color: rgb(255, 255, 255);
-  transition: ease 1s;
-}
-
-span {
-  display: inline-block;
-  background: url(./fast-forward.gif) no-repeat;
-  border-radius: 60%; 
-  height: 40px;
-  width: 40px;
-  /* margin-left:-0px; */
-  background-color: #ffffff;
-  animation: arrow 1s linear infinite;
-}
 
 
 
