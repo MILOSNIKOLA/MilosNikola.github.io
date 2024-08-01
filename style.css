@@ -317,7 +317,7 @@ button {
  
 
 
-@media screen and (max-width: 460px) and (max-height: 864px) {
+@media screen and (min-width: 460px) and (max-height: 864px) {
 
   #time .circle {
     width: 120px;
@@ -393,8 +393,8 @@ button {
 
   #time .circle {
     position: relative;
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     display: flex;
     /* margin: 0;
   padding: 0; */
@@ -404,8 +404,8 @@ button {
 
   #time .circle svg {
     position: relative;
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     transform: rotate(270deg);
   }
 
@@ -426,25 +426,100 @@ button {
 
 
 
+@media screen and (max-width: 460px) {
+  #time {
+    display: flex;
+    /* gap: 40px; */
+    justify-content: space-evenly !important;
+    color: #fff;
+    /* justify-content: center;*/
+  }
+  
+  #time .circle {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    /* margin: 0 5px; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #time .circle svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+  }
+  
+  #time .circle svg circle {
+    width: 100px;
+    height: 100px;
+    fill: transparent;
+    stroke: #070707;
+    stroke-width: 4px;
+    transform: translate(-20px, 5px);
+  }
+  
+  #time .circle svg circle:nth-child(2) {
+    stroke: var(--color);
+    stroke-dasharray: 440;
+  }
+  
+  #time div {
+    position: absolute;
+    text-align: center;
+    font-size: 10px;  /* sifre*/
+    font-weight: 500;
+  } 
+  
+  #time div span {
+    position: absolute;
+    /* transform: translate(-50%,-50%); */
+    font-size: 5px;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  
+  #time .ap {
+    position: relative;
+    font-size: 15px
+    transform: translate(-10px);
+  }
+  
+  .dots {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .dots::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 5px;
+    height: 5px;
+    background: var(--color);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--color), 0 0 60px var(--color);
+  }
+  
+  .prvikrug,.prvikrugg  {
+    /* cx: 40; */
+    /* cy: 70; */
+    r:50;
+  }
 
+  .drugikrug , .drugikrugg {
+    r:50;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .trecikrug, .trecikrugg {
+    r:50;
+  }
+}
+  

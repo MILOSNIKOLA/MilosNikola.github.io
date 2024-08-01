@@ -65,10 +65,10 @@ reci.addEventListener('click', () => {
     // Ajout de la classe CSS pour l'effet "hover"
     reci.classList.toggle('reci');
     console.log('aaaaaaaaa');
-    let interval = setInterval(() => {
-        location.href = 'https://fr.linkedin.com/in/dragan-manojlovic-76985310b?trk=people-guest_people_search-card'
-    }, 1000)
-    
+    // let interval = setInterval(() => {
+    //     location.href = 'https://fr.linkedin.com/in/dragan-manojlovic-76985310b?trk=people-guest_people_search-card' 
+    // }, 1000)
+    window.open('https://fr.linkedin.com/in/dragan-manojlovic-76985310b?trk=people-guest_people_search-card')
 });
 
 
