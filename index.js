@@ -72,14 +72,12 @@ reci.addEventListener('click', () => {
 });
 
 
-const media460 = window.matchMedia('(min-width: 460)') 
+const media460 = window.matchMedia('(max-width: 460)') 
 
-    console.log(media460);
+// media460.addEventListener('click', () => {
+    
+// })
 
-    if (media460.matches) {
-        console.log("l'ecran fait au moins 460");
-        
-    }
 
 
 

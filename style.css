@@ -456,7 +456,7 @@ button {
   }
 
   #time div {
-    font-size: 1rem;
+    font-size: 12px;
     /* Réduit de 1.5rem à 1rem vreme*/
   }
 
@@ -493,6 +493,11 @@ button {
     stroke: var(--color);
     stroke-dasharray: 640;
   }
+
+  svg circle { /* krug spoljicne */
+    r: 70;
+  }
+
 
   #time .circle {    /* mala tacka */
     position: relative;
