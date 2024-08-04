@@ -404,7 +404,7 @@ button {
 
   #time .circle svg {
     position: relative;
-    width: 150px;
+    width: 100px;
     height: 150px;
     transform: rotate(270deg);
   }
@@ -428,12 +428,14 @@ button {
 
 @media screen and (max-width: 460px) {
   
+
   #time .circle {
     width: 120px;
     /* Réduit de 150px à 100px */
     height: 120px;
     /* Réduit de 150px à 100px */
     /* margin: 0 10px; */
+    
   }
 
   #time .circle svg {
@@ -442,35 +444,33 @@ button {
     height: 120px;
     /* Réduit de 150px à 100px */
     position: relative;
-  
-    /* transform: rotate(270deg); */
+    
+    transform: rotate(270deg);
   }
 
   #time .circle svg circle:nth-child(2) {
     stroke-dasharray: 314;
     /* Ajusté en proportion avec la réduction de la taille */
+    
   }
 
   #time .circle svg .circle:nth-child(1) {
     stroke-dashoffset: 500;
+    
   }
 
   #time div {
-    font-size: 12px;
+    font-size: 10px;
     /* Réduit de 1.5rem à 1rem vreme*/
+    position: absolute;
+    text-align: center;
+    
   }
 
   #time div span {
     font-size: 0.4rem;
-    /* Réduit de 0.5rem à 0.4rem */
+   text-align: center;
   }
-
-  /* #time .ap {
-    font-size: 0.1rem;
-   
-  } */
-
-
 
   .dots::before {
     width: 3px;
@@ -478,43 +478,30 @@ button {
     height: 3px;
     /* Réduit de 15px à 10px */
     position: absolute;
-    top: 30px;
-  }
-
-  svg .prvikrug,
-  .drugikrug,
-  .trecikrug {
-    
-    r: 35;
-  }
-
-  svg .prvikrugg, {
-    r: 40;
-    stroke: var(--color);
-    stroke-dasharray: 640;
+    top: 22px;
+    display: none;
   }
 
   svg circle { /* krug spoljicne */
-    r: 70;
+    r: 50;
   }
 
 
   #time .circle {    /* mala tacka */
     position: relative;
-    width: 150px;
-    height: 130px;
+    height: 150px;
     display: flex;
-    /* margin: 0;
-  padding: 0; */
     justify-content: center;
     align-items: center;
+    width:124px;               /*duzina*/
+    
   }
 
   #time .circle svg {
     position: relative;
     width: 150px;
     height: 150px;
-    transform: rotate(270deg);
+    transform: rotate(260deg);
   }
 
   #time .circle svg circle {
@@ -523,7 +510,7 @@ button {
     fill: transparent;
     stroke: #070707;
     stroke-width: 2px;
-    transform: translate(5px, 5px);
+    transform: translate(1px, 5px);
   }
 
   #time .circle svg circle:nth-child(2) {
