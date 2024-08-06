@@ -429,96 +429,96 @@ button {
 @media screen and (max-width: 460px) {
   
 
-  #time .circle {
-    width: 120px;
-    /* Réduit de 150px à 100px */
-    height: 120px;
-    /* Réduit de 150px à 100px */
-    /* margin: 0 10px; */
-    
-  }
-
-  #time .circle svg {
-    width: 120px;
-    /* Réduit de 150px à 100px */
-    height: 120px;
-    /* Réduit de 150px à 100px */
-    position: relative;
-    
-    transform: rotate(270deg);
-  }
-
-  #time .circle svg circle:nth-child(2) {
-    stroke-dasharray: 314;
-    /* Ajusté en proportion avec la réduction de la taille */
-    
-  }
-
-  #time .circle svg .circle:nth-child(1) {
-    stroke-dashoffset: 500;
-    
-  }
-
-  #time div {
-    font-size: 10px;
-    /* Réduit de 1.5rem à 1rem vreme*/
-    position: absolute;
-    text-align: center;
-    
-  }
-
-  #time div span {
-    font-size: 0.4rem;
-   text-align: center;
-  }
-
-  .dots::before {
-    width: 3px;
-    /* Réduit de 15px à 10px */
-    height: 3px;
-    /* Réduit de 15px à 10px */
-    position: absolute;
-    top: 22px;
-    display: none;
-  }
-
-  svg circle { /* krug spoljicne */
-    r: 50;
-  }
-
-
-  #time .circle {    /* mala tacka */
-    position: relative;
-    height: 150px;
+  #time {
     display: flex;
+    /* gap: 40px; */
+    justify-content: space-evenly !important;
+    color: #fff;
+    /* justify-content: center;*/
+  }
+  
+  #time .circle {
+    /* position: relative; */
+    width: 150px;
+    height: 110px;  /* mala tackica*/
+    display: flex;
+    /* margin: 0 5px; */
     justify-content: center;
     align-items: center;
-    width:124px;               /*duzina*/
-    
   }
+  
+  
+  .prvikrug,.drugikrug,.trecikrug {
+   r:50;
+  }
+
+  /* .prvikrugg,.drugikrugg,.trecikrugg {
+    r:50
+  } */
 
   #time .circle svg {
     position: relative;
     width: 150px;
     height: 150px;
-    transform: rotate(260deg);
+    transform: rotate(270deg);
   }
-
+  
   #time .circle svg circle {
     width: 100%;
     height: 100%;
     fill: transparent;
     stroke: #070707;
-    stroke-width: 2px;
-    transform: translate(1px, 5px);
+    stroke-width: 4px;
+    transform: translate(5px, 5px);
   }
-
+  
   #time .circle svg circle:nth-child(2) {
     stroke: var(--color);
     stroke-dasharray: 440;
   }
-
   
+  #time div {
+    position: absolute;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  #time div span {
+    position: absolute;
+    transform: translate(-50%, 0px);
+    font-size: 0.5rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+
+  .dots {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .dots::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    width: 10px;
+    height: 10px;
+    background: var(--color);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--color), 0 0 60px var(--color);
+  }
+
+  #hours,#minutes,#seconds {
+    font-size: 1rem !important;
+  }
+  
+
+
 
 
 }
