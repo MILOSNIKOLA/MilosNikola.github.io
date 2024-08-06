@@ -48,7 +48,7 @@ setInterval(() => {
     // set time circular indicator
     hh.style.strokeDashoffset = 440 - (440 * h) / 12;
     mm.style.strokeDashoffset = 440 - (440 * m) / 60;
-    ss.style.strokeDashoffset = 440 - (440 * s) / 60;
+    // ss.style.strokeDashoffset = 440 - (440 * s) / 60;
 
     // set dot time position indicator
     dotH.style.transform = `rotate(${h * 30}deg)`;
@@ -73,7 +73,7 @@ reci.addEventListener('click', () => {
 
 let media460 = window.matchMedia('(max-width: 460px)');
 
-if (media460 == true) {
+if (media460) {
     setInterval(() => {
         // get time indicator elements
         let hours = document.getElementById('hours');
@@ -115,9 +115,9 @@ if (media460 == true) {
         // ampm.innerHTML = ap;
     
         // set time circular indicator
-        hh.style.strokeDashoffset = 440 - (440 * h) / 12;
-        mm.style.strokeDashoffset = 440 - (440 * m) / 60;
-        ss.style.strokeDashoffset = 440 - (440 * s) / 60;
+        hh.style.strokeDashoffset = 310 - (310 * h) / 12;
+        mm.style.strokeDashoffset = 310 - (310 * m) / 60;
+        ss.style.strokeDashoffset = 310 - (310 * s) / 60;
     
         // set dot time position indicator
         dotH.style.transform = `rotate(${h * 30}deg)`;
@@ -127,6 +127,7 @@ if (media460 == true) {
     }, 1000);
     
 }
+
 
 
 // if (media460 == setInterval()) {
