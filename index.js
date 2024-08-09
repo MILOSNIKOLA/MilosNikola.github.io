@@ -55,6 +55,61 @@ setInterval(() => {
     dotM.style.transform = `rotate(${m * 6}deg)`;
     dotS.style.transform = `rotate(${s * 6}deg)`;
 
+    if (media500) {
+        setInterval1(() => {
+            // get time indicator elements
+            let hours = document.getElementById('hours');
+            let minutes = document.getElementById('minutes');
+            let secondes = document.getElementById('seconds');
+            // let ampm = document.getElementById('ampm');
+        
+            // digits time indicator
+            let hh = document.getElementById('hh');
+            let mm = document.getElementById('mm');
+            let ss = document.getElementById('ss');
+        
+        
+            // dot time indicator
+            let dotH = document.querySelector('.h_dot');
+            let dotM = document.querySelector('.m_dot');
+            let dotS = document.querySelector('.s_dot');
+        
+            // get current time
+            let h = new Date().getHours();
+            let m = new Date().getMinutes();
+            let s = new Date().getSeconds();
+            // let ap = h >= 24 ? '' : '';
+        
+            // convert to 12 hour format
+            if (h > 24) {
+                h = h - 12;
+            }
+        
+            // add 0 before single digit
+            h = h < 10 ? '0' + h : h;
+            m = m < 10 ? '0' + m : m;
+            s = s < 10 ? '0' + s : s;
+        
+            // set time and label
+            hours.innerHTML = h + 'Hours';
+            minutes.innerHTML = m + 'Minutes';
+            secondes.innerHTML = s + 'Seconds';
+            // ampm.innerHTML = ap;
+        
+            // set time circular indicator
+            hh.style.strokeDashoffset = 310 - (310 * h) / 12;
+            mm.style.strokeDashoffset = 310 - (310 * m) / 60;
+            ss.style.strokeDashoffset = 310 - (310 * s) / 60;
+        
+            // set dot time position indicator
+            dotH.style.transform = `rotate(${h * 30}deg)`;
+            dotM.style.transform = `rotate(${m * 6}deg)`;
+            dotS.style.transform = `rotate(${s * 6}deg)`;
+        
+        }, 1000);
+        
+    }
+
 }, 1000);
 
 const reci = document.querySelector('.p');
@@ -129,63 +184,63 @@ if (media500) {
     
 }
 
-let setInterval2;
-let media460 = window.matchMedia('(max-width: 460px)');
+// let setInterval2;
+// let media460 = window.matchMedia('(max-width: 460px)');
 
-if (media460) {
-    setInterval2(() => {
-        // get time indicator elements
-        let hours = document.getElementById('hours');
-        let minutes = document.getElementById('minutes');
-        let secondes = document.getElementById('seconds');
-        // let ampm = document.getElementById('ampm');
+// if (media460) {
+//     setInterval2(() => {
+//         // get time indicator elements
+//         let hours = document.getElementById('hours');
+//         let minutes = document.getElementById('minutes');
+//         let secondes = document.getElementById('seconds');
+//         // let ampm = document.getElementById('ampm');
     
-        // digits time indicator
-        let hh = document.getElementById('hh');
-        let mm = document.getElementById('mm');
-        let ss = document.getElementById('ss');
+//         // digits time indicator
+//         let hh = document.getElementById('hh');
+//         let mm = document.getElementById('mm');
+//         let ss = document.getElementById('ss');
     
     
-        // dot time indicator
-        let dotH = document.querySelector('.h_dot');
-        let dotM = document.querySelector('.m_dot');
-        let dotS = document.querySelector('.s_dot');
+//         // dot time indicator
+//         let dotH = document.querySelector('.h_dot');
+//         let dotM = document.querySelector('.m_dot');
+//         let dotS = document.querySelector('.s_dot');
     
-        // get current time
-        let h = new Date().getHours();
-        let m = new Date().getMinutes();
-        let s = new Date().getSeconds();
-        // let ap = h >= 24 ? '' : '';
+//         // get current time
+//         let h = new Date().getHours();
+//         let m = new Date().getMinutes();
+//         let s = new Date().getSeconds();
+//         // let ap = h >= 24 ? '' : '';
     
-        // convert to 12 hour format
-        if (h > 24) {
-            h = h - 12;
-        }
+//         // convert to 12 hour format
+//         if (h > 24) {
+//             h = h - 12;
+//         }
     
-        // add 0 before single digit
-        h = h < 10 ? '0' + h : h;
-        m = m < 10 ? '0' + m : m;
-        s = s < 10 ? '0' + s : s;
+//         // add 0 before single digit
+//         h = h < 10 ? '0' + h : h;
+//         m = m < 10 ? '0' + m : m;
+//         s = s < 10 ? '0' + s : s;
     
-        // set time and label
-        hours.innerHTML = h + 'Hours';
-        minutes.innerHTML = m + 'Minutes';
-        secondes.innerHTML = s + 'Seconds';
-        // ampm.innerHTML = ap;
+//         // set time and label
+//         hours.innerHTML = h + 'Hours';
+//         minutes.innerHTML = m + 'Minutes';
+//         secondes.innerHTML = s + 'Seconds';
+//         // ampm.innerHTML = ap;
     
-        // set time circular indicator
-        hh.style.strokeDashoffset = 310 - (310 * h) / 12;
-        mm.style.strokeDashoffset = 310 - (310 * m) / 60;
-        ss.style.strokeDashoffset = 310 - (310 * s) / 60;
+//         // set time circular indicator
+//         hh.style.strokeDashoffset = 310 - (310 * h) / 12;
+//         mm.style.strokeDashoffset = 310 - (310 * m) / 60;
+//         ss.style.strokeDashoffset = 310 - (310 * s) / 60;
     
-        // set dot time position indicator
-        dotH.style.transform = `rotate(${h * 30}deg)`;
-        dotM.style.transform = `rotate(${m * 6}deg)`;
-        dotS.style.transform = `rotate(${s * 6}deg)`;
+//         // set dot time position indicator
+//         dotH.style.transform = `rotate(${h * 30}deg)`;
+//         dotM.style.transform = `rotate(${m * 6}deg)`;
+//         dotS.style.transform = `rotate(${s * 6}deg)`;
     
-    }, 1000);
+//     }, 1000);
     
-}
+// }
 
 
 
