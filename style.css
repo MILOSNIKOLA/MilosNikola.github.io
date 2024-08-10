@@ -118,11 +118,8 @@ p {
   font-size: 1rem !important;
 }
 
-
-
-
 body {
-  height: 50vh;
+  height: 900px;
   justify-content: center;
   align-items: center;
 }
@@ -135,13 +132,10 @@ body {
   color: #fff;
   background: #111;
   cursor: pointer;
-
   position: absolute !important;
-
   justify-content: center;
   z-index: 0;
   border-radius: 10px;
-
 }
 
 .glow-on-hover:before {
@@ -224,10 +218,6 @@ button {
   justify-content: center;
   align-items: center;
   border: #232527;
-  /* background-color: chartreuse; */
-  /* width: 100%; */
-  /* position: absolute;
-    top: 200px; */
   text-align: center;
 }
 
@@ -236,15 +226,11 @@ button {
   justify-content: center;
   position: relative;
   top: 100px;
-
 }
-
 
 .reci:hover {
   background: #0000008e;
-
   transition: .50s ease-in-out;
-
 }
 
 .p:hover {
@@ -263,14 +249,12 @@ button {
   height: 40px;
   width: 100px;
   margin-left: -30px;
- 
  }
  
  .quiz {
    position: absolute;
    text-align: center;
    display: flex;
-   
  }
  
  .quiz a {
@@ -291,24 +275,12 @@ button {
    border-radius: 60%; 
    height: 40px;
    width: 40px;
-   /* margin-left:-0px; */
    background-color: #ffffff;
    animation: arrow 1s linear infinite;
  }
- 
-
-
-
-
-
-
-
-
 
  @media screen and (max-width: 500px) {
    
-   
-  
   .prvikrug,.drugikrug,.trecikrug {
    r:50;
   }
@@ -321,7 +293,6 @@ button {
     font-size: 1rem !important;
   }
 
-  
   #time {
     display: flex;
     /* gap: 40px; */
@@ -351,43 +322,36 @@ button {
     stroke: var(--color);
     stroke-dasharray: 400;
   }
-
-
  }
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 460px) {
   
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #232527;
+    padding: 0;
+    margin: 0;
+    z-index: 15;
+  }
 
   #time {
     display: flex;
-    /* gap: 40px; */
     justify-content: space-evenly !important;
     color: #fff;
-    /* justify-content: center;*/
   }
   
   #time .circle {
-    /* position: relative; */
     width: 150px;
     height: 110px;  /* mala tackica*/
     display: flex;
-    /* margin: 0 5px; */
     justify-content: center;
     align-items: center;
   }
-  
-  
+
   .prvikrug,.drugikrug,.trecikrug {
    r:50;
   }
@@ -414,7 +378,7 @@ button {
   
   #time .circle svg circle:nth-child(2) {
     stroke: var(--color);
-    stroke-dasharray: 350;
+    stroke-dasharray: 400;
   }
   
   #time div {
@@ -467,18 +431,69 @@ button {
   i {
     font-size: 10px;
   }
+  .container {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #232527;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 15;
+  }
 }
  
-@media screen and (max-width: 367px) {
-  .container {
-   
+@media screen and (max-width: 370px) {
+  * {
+    margin: 0;
+    box-sizing: border-box;
   }
+ 
+
+  /* .container {
+    min-width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #232527;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 15;
+  } */
   
+  .clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
   #time {
     visibility: hidden;
     display: none;
-  }
+  } 
   
+.jeu {
+  position: absolute;
+  top: 50rem;
+  right: 125px;
+}
+ html.hydrated {
+  height: 900px !important;
+}
+
+  .svg {
+    height: 300px !important;
+    width: 300px !important;
+  }
+
+  .dots.hrr_dott, .min_dott, .sec_dott{
+    height: 300px !important;
+  }
 
 
 }
