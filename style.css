@@ -340,16 +340,16 @@ button {
     align-items: center;
   }
 
-  /* #time .circle svg {
+  #time .circle svg {
     position: relative;
     width: 150px;
     height: 150px;
     transform: rotate(270deg);
-  } */
+  }
 
   #time .circle svg circle:nth-child(2) {
     stroke: var(--color);
-    stroke-dasharray: 190;
+    stroke-dasharray: 400;
   }
 
 
@@ -414,7 +414,7 @@ button {
   
   #time .circle svg circle:nth-child(2) {
     stroke: var(--color);
-    stroke-dasharray: 310;
+    stroke-dasharray: 350;
   }
   
   #time div {
