@@ -496,17 +496,9 @@ body {
     position: absolute;
     top: -250px;
     right: -20px;
+    
   }
   
-  .clock {
-    position: relative;
-     width: 100px;
-     height: 100px; */
-     /* display: flex;
-     justify-content: center;
-     align-items: center; */
-     /* scale: 1;
-  }
 
 }
 
