@@ -99,7 +99,7 @@ if (media500.matches) {
         // ampm.innerHTML = ap;
     
         // set time circular indicator
-        hh.style.strokeDashoffset = 400 - (370 * h) / 12;
+        hh.style.strokeDashoffset = 400 - (380 * h) / 12;
         mm.style.strokeDashoffset = 400 - (310 * m) / 60;
         ss.style.strokeDashoffset = 400 - (310 * s) / 60;
     
