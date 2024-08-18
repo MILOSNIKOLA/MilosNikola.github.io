@@ -480,20 +480,104 @@ button {
   /* z-index: 20; */
 }
 
+h1 {
+  font-size: 10px;
+  text-align: center;
+  margin: 5px 20px 0;
+  font-size: 14px;
+}
+
+i {
+  text-align: center;
+}
+
+.p {
+  font-size: 10px;
+}
+.glow-on-hover {
+  width: 170px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: absolute !important;
+  justify-content: center;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  display: flex !important;
+  justify-content: center;
+  /* background-size: 200%; */
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(90% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover {
+  padding: 0 10px;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover {
+  background-color: #232527;
+  position: relative;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #11111141;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+
+/* 
 #timee .circlee{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 5vh;
+  min-height: vh;
   overflow: hidden;
 }
 
 svg .svg {
-  width: 150px !important;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   align-self: center;
+  margin:  200px 0 ;
 }
 
 #clock {
@@ -506,6 +590,7 @@ svg .svg {
   scale:1.2;
   box-shadow: inset 5px 5px 24px rgba(0, 0, 0, 0.75);
   border-radius: 50%;
+  
 }
 
 
@@ -523,25 +608,23 @@ svg .svg {
 #timee .circlee:nth-child(1) svg{
   width: 200px;
   height: 200px;
-  position: absolute;
-  top: -20rem;
-  left: 6rem;
+  margin: 0 0 0 100px;
+  
 }
 
 #timee .circlee:nth-child(2) svg{
   width: 170px;
   height: 170px;
-  position: absolute;
-  top: -18.8rem;
-  left: 7.3rem;
+  
 }
 
 #timee .circlee:nth-child(3) svg{
   width: 140px;
   height: 140px;
   
-  top: -18.8rem;
+  /* top: -2.8rem;
   left: 7.3rem;
+  z-index: 2; 
 }
 
 #timee .circlee svg circle{
@@ -551,6 +634,15 @@ svg .svg {
   stroke-width: 5;
   stroke: var(--clr);
 }
+
+#clock {
+  position: absolute;
+  top: 50%;
+} 
+*/
+
+
+
 
 }
 
