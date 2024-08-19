@@ -283,8 +283,13 @@ button {
 
 
 #timee {
-  /* display: none; */
+  display: none;
 }
+
+
+
+
+
 
 
 
@@ -465,6 +470,7 @@ button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
  
   #time {
@@ -472,6 +478,10 @@ button {
     
   } 
   
+body {
+  position: static !important;
+}
+
 .jeu {
   position: absolute;
   top: 46rem;
@@ -570,16 +580,17 @@ i {
   position: absolute;
   top: -40rem;
   left: 5px;
-  z-index: -10;
+  
 }
 
 svg .svg {
   width: 300px;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  align-self: center;
-  z-index: -10;
+  align-self: center; */
+  position: absolute;
+  top: 200px !important;
 }
 
 #clock {
@@ -591,11 +602,7 @@ svg .svg {
   align-items: center;
   scale:1;
   box-shadow: inset 5px 5px 24px rgba(0, 0, 0, 0.75);
-  border-radius: 50%;
-  position: absolute;
-  top: -40rem;
-  left: 5px;
-  z-index: -10;
+  border-radius: 50%; 
 }
 
 #timee {
@@ -603,39 +610,57 @@ svg .svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 #timee .circlee svg{
   position: relative;
+  transform: rotate(270deg);
 }
  
 #timee .circlee:nth-child(1) svg{
-  width: 200px;
-  height: 200px; 
+  width: 220px;
+  height: 230px;
+  top: -20px; 
 }
 
 #timee .circlee:nth-child(2) svg{
-  width: 170px;
-  height: 170px;
+  width: 200px;
+  height: 220px;
+  position: relative;
+  top: -60px;
+  left: -10px;
 }
 
 #timee .circlee:nth-child(3) svg{
   width: 140px;
   height: 140px;
-  
-  /* top: -2.8rem;
-  left: 7.3rem;
-  z-index: 2; */
 }
-mee .circlee svg circle{
-  width: 100%;
+#timee .circlee svg circle{
+  width: 300px;
   height: 100%;
   fill: transparent;
   stroke-width: 5;
   stroke: var(--clr);
+  transform: translate(-20px,5px);
 }
 
-
+#timee .circlee:nth-child(1) svg circle {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+ 
+#timee .circlee:nth-child(2) svg circle {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  
+}
+ 
+#timee .circlee:nth-child(3) svg circle {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+ 
 
 
 }
