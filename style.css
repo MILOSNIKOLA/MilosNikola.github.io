@@ -568,9 +568,6 @@ i {
   border-radius: 10px;
 }
 
-
-
-
 #timee .circlee{
   display: flex;
   justify-content: center;
@@ -578,17 +575,13 @@ i {
   min-height: 5vh;
   overflow: hidden;
   position: absolute;
-  top: -35rem;
-  left: 65px;
+  top: -45rem;
+  left: 90px;
   
 }
 
 svg .svg {
   width: 300px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center; */
   position: absolute;
   top: 200px !important;
 }
@@ -622,20 +615,22 @@ svg .svg {
 #timee .circlee:nth-child(1) svg{
   width: 220px;
   height: 230px;
-  top: -20px; 
+  top: -60px; 
 }
 
 #timee .circlee:nth-child(2) svg{
   width: 200px;
   height: 220px;
   position: relative;
-  top: -60px;
+  top: -100px;
   left: -10px;
 }
 
 #timee .circlee:nth-child(3) svg{
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
+  top: -30px;
+  left: -40px;
 }
 #timee .circlee svg circle{
   width: 300px;
@@ -643,26 +638,40 @@ svg .svg {
   fill: transparent;
   stroke-width: 5;
   stroke: var(--clr);
-  transform: translate(-20px,5px);
+  transform: translate(-15px,5px);
 }
 
+
+/* circle#hhh {
+  position: absolute;
+  top: 50px;
+} */
+
 #timee .circlee:nth-child(1) svg circle {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+  stroke-dashoffset: 570;
 }
  
 #timee .circlee:nth-child(2) svg circle {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 0;
+  stroke-dasharray: 630;
+  stroke-dashoffset: 380;
   
 }
  
 #timee .circlee:nth-child(3) svg circle {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 0;
+  stroke-dasharray: 530;
+  stroke-dashoffset: 300;
 }
  
-
+.dotss {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* z-index: 10; */
+}
 
 }
 
