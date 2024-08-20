@@ -578,8 +578,8 @@ i {
   min-height: 5vh;
   overflow: hidden;
   position: absolute;
-  top: -40rem;
-  left: 5px;
+  top: -35rem;
+  left: 65px;
   
 }
 
@@ -602,7 +602,8 @@ svg .svg {
   align-items: center;
   scale:1;
   box-shadow: inset 5px 5px 24px rgba(0, 0, 0, 0.75);
-  border-radius: 50%; 
+  border-radius: 50%;
+   
 }
 
 #timee {
