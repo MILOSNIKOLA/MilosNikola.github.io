@@ -575,7 +575,7 @@ i {
   min-height: 5vh;
   overflow: hidden;
   position: absolute;
-  top: -45rem;
+  top: -30rem;
   left: 90px;
   
 }
@@ -583,7 +583,7 @@ i {
 svg .svg {
   width: 300px;
   position: absolute;
-  top: 200px !important;
+  
 }
 
 #clock {
@@ -596,7 +596,7 @@ svg .svg {
   scale:1;
   box-shadow: inset 5px 5px 24px rgba(0, 0, 0, 0.75);
   border-radius: 50%;
-   
+  
 }
 
 #timee {
@@ -604,6 +604,7 @@ svg .svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  
   
 }
 
@@ -642,10 +643,6 @@ svg .svg {
 }
 
 
-/* circle#hhh {
-  position: absolute;
-  top: 50px;
-} */
 
 #timee .circlee:nth-child(1) svg circle {
   stroke-dasharray: 760;

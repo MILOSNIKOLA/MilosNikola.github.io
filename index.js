@@ -108,32 +108,10 @@ if (media500.matches) {
         dotM.style.transform = `rotate(${m * 6}deg)`;
         dotS.style.transform = `rotate(${s * 6}deg)`;
     
-    }, 1000);
+   
 
-    let media370 = window.matchMedia('(max-width: 370px)');
-    
-    setInterval370(() => {
-        
-        if (media370.matches) {
-
-        let hhh = document.getElementById('hhh');
-        let mmm = document.getElementById('mmm');
-        let sss = document.getElementById('mmm');
-
-        let h = new Data().getHours();
-        let m = new Data().getMinutes();
-        let s = new Date().getSeconds();
-
-        hhh.style.strokeDashoffset = 760 - (760 * h) / 12;
-        mmm.style.strokeDashoffset = 130 - (630 * m) / 60;
-        sss.style.strokeDashoffset = 130 - (130 * h) / 60;
-
-        }
-    })
-    
-}
-
-
+        }, 1000);   
+    }
 }, 1000);
 
 const reci = document.querySelector('.p');
@@ -150,7 +128,29 @@ reci.addEventListener('click', () => {
     window.open('https://fr.linkedin.com/in/dragan-manojlovic-76985310b?trk=people-guest_people_search-card')
 });
 
+let media370 = window.matchMedia('(max-width: 370px)');
+    
+media370(() => {
 
+if (media370.matches) {
+
+let hhh = document.getElementById('hhh');
+let mmm = document.getElementById('mmm');
+let sss = document.getElementById('mmm');
+
+let h = new Data().getHours();
+let m = new Data().getMinutes();
+let s = new Date().getSeconds();
+
+hhh.style.strokeDashoffset = 210 - (210 * h) / 12;
+mmm.style.strokeDashoffset = 130 - (630 * m) / 60;
+sss.style.strokeDashoffset = 130 - (130 * h) / 60;
+
+
+
+    }
+}
+)
 
 
 
