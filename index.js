@@ -147,9 +147,9 @@ reci.addEventListener('click', () => {
             let m = new Date().getMinutes();
             let s = new Date().getSeconds();
 
-            hhh.style.strokeDashoffset = 400 - (400 * h) / 12;
-            mmm.style.strokeDashoffset = 100 - (100 * m) / 60;
-            sss.style.strokeDashoffset = 760 - (760 * s) / 60;
+            hhh.style.strokeDashoffset = 300 - (300 * h) / 12;
+            mmm.style.strokeDashoffset = 400 - (400 * m) / 60;
+            sss.style.strokeDashoffset = 440 - (440 * s) / 60;
  }              
     }, 1000); 
     
