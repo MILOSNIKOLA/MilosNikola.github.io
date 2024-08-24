@@ -645,13 +645,13 @@ svg .svg {
 
 
 #timee .circlee:nth-child(1) svg circle {
-  stroke-dasharray: 760;
+  stroke-dasharray: 600;
   stroke-dashoffset: 570;
 }
  
 #timee .circlee:nth-child(2) svg circle {
-  stroke-dasharray: 630;
-  stroke-dashoffset: 380;
+  stroke-dasharray: 460;
+  stroke-dashoffset: 100;
   
 }
  
