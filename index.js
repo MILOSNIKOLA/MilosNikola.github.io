@@ -130,31 +130,31 @@ reci.addEventListener('click', () => {
     window.open('https://fr.linkedin.com/in/dragan-manojlovic-76985310b?trk=people-guest_people_search-card')
 });
 
-    let media370 = window.matchMedia('(max-width: 370px)');
+    // let media370 = document.getElement(media370);
+        let media370 = window.matchMedia('(max-width: 370px)');
         
-    // media370(() => {
-
-    if (media370.matches) {
-
+       
+                
+ setInterval(() => {
+     if (media370.matches) {
+            
+       
             let hhh = document.getElementById('hhh');
             let mmm = document.getElementById('mmm');
-            let sss = document.getElementById('mmm');
+            let sss = document.getElementById('sss');
 
             let h = new Date().getHours();
             let m = new Date().getMinutes();
-            let ssss  = new Date().getSeconds();
+            let s = new Date().getSeconds();
 
-            hhh.style.strokeDashoffset = 210 - (210 * h) / 12;
-            mmm.style.strokeDashoffset = 460 - (460 * m) / 60;
-            sss.style.strokeDashoffset = 100 - (100 * h) / 60;
-
-
-
-        }
-//     }
-// )
-
-
+            hhh.style.strokeDashoffset = 400 - (400 * h) / 12;
+            mmm.style.strokeDashoffset = 100 - (100 * m) / 60;
+            sss.style.strokeDashoffset = 760 - (760 * s) / 60;
+ }              
+    }, 1000); 
+    
+    
+   
 
 
 

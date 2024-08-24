@@ -645,18 +645,18 @@ svg .svg {
 
 
 #timee .circlee:nth-child(1) svg circle {
-  stroke-dasharray: 600;
-  stroke-dashoffset: 570;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 760;
 }
  
 #timee .circlee:nth-child(2) svg circle {
-  stroke-dasharray: 460;
-  stroke-dashoffset: 100;
+  stroke-dasharray: 350;
+  stroke-dashoffset: 630;
   
 }
  
 #timee .circlee:nth-child(3) svg circle {
-  stroke-dasharray: 530;
+  stroke-dasharray: 350;
   stroke-dashoffset: 300;
 }
  
