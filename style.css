@@ -575,7 +575,7 @@ i {
   min-height: 5vh;
   overflow: hidden;
   position: absolute;
-  top: -30rem;
+  top: -40rem;
   left: 90px;
   
 }
@@ -596,6 +596,20 @@ svg .svg {
   scale:1;
   box-shadow: inset 5px 5px 24px rgba(0, 0, 0, 0.75);
   border-radius: 50%;
+  
+}
+
+/* .krug{
+  /* overflow: hidden; */
+  background: #8f7171;
+  width: 130px;
+  border-radius: 50%;
+} */
+
+.circlee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
@@ -650,7 +664,7 @@ svg .svg {
 }
  
 #timee .circlee:nth-child(2) svg circle {
-  stroke-dasharray: 400;
+  stroke-dasharray: 390;
   /* stroke-dashoffset: 630; */
   
 }
