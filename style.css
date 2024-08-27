@@ -484,7 +484,7 @@ body {
 
 .jeu {
   position: absolute;
-  top: 46rem;
+  top: 56rem;
   right: 125px;
   display: block;
   /* z-index: 20; */
@@ -572,12 +572,12 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 15vh;
+  min-height: 5vh;
   overflow: hidden;
   position: absolute;
   top: -40rem;
   left: 90px;
-  margin: 200px auto;
+  margin: 100px auto;
   
 }
 
@@ -597,7 +597,7 @@ svg .svg {
   scale:1;
   box-shadow: inset 5px 5px 24px rgba(0, 0, 0, 0.75);
   border-radius: 50%;
-  
+  min-height: 5rem;
 }
 
 /* .krug{
