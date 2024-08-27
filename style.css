@@ -600,7 +600,7 @@ svg .svg {
 }
 
 /* .krug{
-  /* overflow: hidden; */
+  overflow: hidden; 
   background: #8f7171;
   width: 130px;
   border-radius: 50%;
@@ -681,14 +681,19 @@ svg .svg {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  /* z-index: 10; */
+  z-index: 10;
 }
 
-.dotss::before {
+/* .dotss::before {
   content: '';
   position: absolute;
-  
-}
+  top: 0;
+  width: 15px;
+  height: 15px;
+  background: var(--clr);
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--clr),0 0 40px var(--clr);
+} */
 
 
 /* proveri ti dali je u blocku */
