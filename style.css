@@ -572,12 +572,12 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 5vh;
+  min-height: 15vh;
   overflow: hidden;
   position: absolute;
   top: -40rem;
   left: 90px;
-  margin: 50px auto;
+  margin: 100px auto;
   
 }
 
