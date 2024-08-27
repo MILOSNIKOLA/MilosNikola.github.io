@@ -577,6 +577,7 @@ i {
   position: absolute;
   top: -40rem;
   left: 90px;
+  margin: 50px auto;
   
 }
 
@@ -697,3 +698,8 @@ svg .svg {
 
 
 /* proveri ti dali je u blocku */
+
+
+
+
+}
