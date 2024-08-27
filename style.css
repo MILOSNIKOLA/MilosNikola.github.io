@@ -684,6 +684,11 @@ svg .svg {
   /* z-index: 10; */
 }
 
+.dotss::before {
+  content: '';
+  position: absolute;
+  
 }
+
 
 /* proveri ti dali je u blocku */
