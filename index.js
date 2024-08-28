@@ -150,6 +150,8 @@ reci.addEventListener('click', () => {
             hhh.style.strokeDashoffset = 300 - (300 * h) / 12;
             mmm.style.strokeDashoffset = 390 - (390 * m) / 60;
             sss.style.strokeDashoffset = 440 - (440 * s) / 60;
+
+            
  }              
     }, 1000); 
     

@@ -597,7 +597,7 @@ svg .svg {
   scale:1;
   box-shadow: inset 5px 5px 24px rgba(0, 0, 0, 0.75);
   border-radius: 50%;
-  min-height: 5rem;
+  /* min-height: 5rem; */
 }
 
 /* .krug{
@@ -607,19 +607,19 @@ svg .svg {
   border-radius: 50%;
 } */
 
-.circlee {
+/* .circlee {
   display: flex;
   justify-content: center;
   align-items: center;
   
-}
+} */
 
 #timee {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  margin: 5rem auto;
   
 }
 
@@ -699,7 +699,42 @@ svg .svg {
 
 /* proveri ti dali je u blocku */
 
+@media screen and (max-width: 360px) {
+  
+  body {
+    height: 750px !important;
+  }
 
+  .quiz{
+    position: relative;
+    top: -300px;
+  }
 
+  #timee {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  #timee {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1rem -20px !important;
+    
+  }
+
+  .jeu {
+    margin: auto -20px;
+
+  }
+}
 
 }

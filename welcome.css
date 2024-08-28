@@ -1,0 +1,98 @@
+body {
+    background: #111111; /* Couleur de fond du corps de la page */
+    font-family: Arial, sans-serif; /* Police de caractères */
+}
+
+.header {
+    text-align: center; /* Centre le texte */
+    margin-top: 5px; /* Marge en haut */
+}
+
+h1 {
+    color: white; /* Couleur du texte du titre */
+    font-size: 2.5px; /* Taille de la police du titre */
+    /* margin-bottom: 20px; Marge en bas du titre */
+}
+
+.language {
+    font-size: 2em; /* Taille de la police */
+    text-align: center; /* Centre le texte */
+    /* margin-top: 10%; Marge en haut */
+    opacity: 0; /* Opacité initiale à 0 pour la transition */
+    transition: opacity 1s; /* Transition de l'opacité sur 1 seconde */
+}
+
+.language.show {
+    opacity: 1; /* Opacité maximale */
+}
+
+body {
+    background: #753838; /* Couleur de fond du corps de la page */
+    font-family: Arial, sans-serif; /* Police de caractères */
+    color: #fff; /* Couleur du texte de base */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+.header {
+    text-align: center; /* Centre le texte */
+    margin-top: 20px; /* Marge en haut */
+    padding: 0 10px; /* Padding horizontal pour le texte */
+}
+
+h1 {
+    color: #ffffff; /* Couleur du texte du titre */
+    font-size: 2.5em; /* Taille de la police du titre */
+    margin-bottom: 20px; /* Marge en bas du titre */
+}
+
+p {
+    font-size: 1em; /* Taille de la police des paragraphes */
+    line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
+    margin: 10px 0; /* Marge en haut et en bas des paragraphes */
+}
+
+p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.language {
+    font-size: 22px; /* Taille de la police */
+    text-align: center; /* Centre le texte */
+    margin-top: 5%; /* Marge en haut */
+    /* opacity: 1; Opacité initiale à 0 pour la transition */
+    /* transition: opacity 0; Transition de l'opacité sur 1 seconde */
+    opacity: 1;
+}
+
+.language.show {
+    opacity: 0; /* Opacité maximale */
+}
+
+.language-container {
+    text-align: center; /* Centre le conteneur */
+    margin-bottom: 10px; /* Marge en bas */
+    opacity: 1;
+}
+
+button {
+    margin:0 5px; /* Marge autour des boutons */
+    padding: 10px; /* Espacement interne */
+    font-size: 35px; /* Taille de la police des boutons */
+    cursor: pointer; /* Changement du curseur pour indiquer que c'est cliquable */
+    background-color: #4CAF50; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 5px; /* Coins arrondis du bouton */
+}
+
+button:hover {
+    background-color: #45a049; /* Couleur de fond du bouton au survol */
+    opacity: 1;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}

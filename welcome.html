@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./welcome.css">
+    <title>Langues défilantes</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Choisissez votre langue</h1>
+        <p>Bienvenue sur notre site web multilingue !</p>
+        
+    </div>
+    <div class="language-container">
+        <div class="language" id="english">
+            <button onclick="selectLanguage('english')"><a href="./indexx.html" target="_blank">English</a></button>
+            <p><a href="./indexx.html" target="_blank">To get started, select the language you want to view the content in. The available options are English, French, and Serbian. The text will automatically change every 5 seconds to allow you to see the different languages ​​available.</a></p>
+        </div>
+        <div class="language" id="french">
+            <button onclick="selectLanguage('french')">Français</button>
+            <p><a href="./indexx.html" target="_blank">Pour commencer, sélectionnez la langue dans laquelle vous souhaitez voir le contenu. Les options disponibles sont l'anglais, le français et le serbe. Le texte changera automatiquement toutes les 5 secondes pour vous permettre de voir les différentes langues disponibles.</a></p>
+        </div>
+        <div class="language" id="serbian">
+            <button onclick="selectLanguage('serbian')">Српски</button>
+            <p><a href="./indexx.html" target="_blank">Да бисте започели, изаберите језик на којем желите да видите садржај. Доступне опције су енглески, француски и српски. Текст ће се аутоматски мењати сваких 5 секунди како би вам омогућио да видите различите доступне језике.</a></p>
+        </div>
+    </div>
+
+    <script src="./welcome.js"></script>
+</body>
+</html>
