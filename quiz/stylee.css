@@ -80,11 +80,13 @@ p {
   background: red;
   /* text-decoration: line-through; */
   color: #fff;
+  
 }
 
 .responsewronggg {
   border: 6px dashed red; 
   color: #ffffff;
+  
 }
 
 /* .erreur {

@@ -44,11 +44,12 @@ btn1.addEventListener('click', () => {
 const wrongButtons = [btn2, btn3, btn4];
 wrongButtons.forEach(button => {
     button.addEventListener('click', handleWrongAnswer);
+    button.class.add('responsewronggg')
 });
 
 // Ajout de l'événement pour le conteneur de la question
 questionContainer.addEventListener('click', () => {
     questionContainer.classList.toggle('question-clicked');
-    questionContainer.classList.toggle('erreur');
+    questionContainer.classList.add('erreur');
 });
 
