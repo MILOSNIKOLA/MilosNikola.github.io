@@ -4,7 +4,7 @@ const btn2 = document.getElementById('btn-2');
 const btn3 = document.getElementById('btn-3');
 const btn4 = document.getElementById('btn-4');
 const response = document.querySelector('p');
-const boxx = document.getSelection('box')
+// const boxx = document.getSelection('box')
 
 // Nombre initial d'essais
 let remainingAttempts = 3;
@@ -45,7 +45,6 @@ btn1.addEventListener('click', () => {
 const wrongButtons = [btn2, btn3, btn4];
 wrongButtons.forEach(button => {
     button.addEventListener('click', handleWrongAnswer);
-    button.class.add('responsewronggg')
 });
 
 // Ajout de l'événement pour le conteneur de la question
@@ -53,7 +52,3 @@ questionContainer.addEventListener('click', () => {
     questionContainer.classList.toggle('question-clicked');
     questionContainer.classList.add('erreur');
 });
-
-boxx.addEventListener('click', () {
-    
-})

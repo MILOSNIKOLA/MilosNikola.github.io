@@ -15,15 +15,33 @@ body {
     background: rgb(0, 0, 0);
 }
 
+
+
 .box {
     border: 6px solid white;
     transition: .25s ease;
     background-color: black;
     padding: 10px;
     position: relative;
-
+    /* transition: ease .75s;
+    animation-name: boxx;
+    animation: ease-in-out 5s boxx; */
     
 }
+
+/* @keyframes boxx {
+  0 {
+    opacity: 100;
+  }
+ 
+  50% {
+    opacity: 50;
+  } 
+  
+  100% {
+    opacity: 0;
+  }  
+} */
 
 p {
     visibility: hidden;
@@ -91,7 +109,7 @@ p {
   
 }
 
-/* .erreur {
+/*.erreur { */
   /* position: absolute;
   top: 100px; */
   /* justify-content: center; */
@@ -112,15 +130,15 @@ p {
   transform: translateX(-200px);
   opacity: 1;
   color: #fff;
-} */
+}
 
-.commencer {
+/* .commencer {
 
 }
 
 .intro {
 
-}
+} */
 
 .containerr {
   width: 300px;
@@ -379,6 +397,4 @@ p {
   bottom: -25px;
   left: -8px;
   background-color: #000;
-}
-
-
+} 
