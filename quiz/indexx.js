@@ -4,6 +4,7 @@ const btn2 = document.getElementById('btn-2');
 const btn3 = document.getElementById('btn-3');
 const btn4 = document.getElementById('btn-4');
 const response = document.querySelector('p');
+const hidden = document.querySelector('boxx')
 // const boxx = document.getSelection('box')
 
 // Nombre initial d'essais
@@ -63,3 +64,23 @@ questionContainer.addEventListener('click', () => {
     questionContainer.classList.add('erreur');
     
 });
+
+// setTimeout(() => {
+//     // Faire disparaître la première div en utilisant l'opacité
+//     document.getSelection('containerr').style.opacity = '0';
+//     // console.log(containerr);
+    
+    
+//     // Faire apparaître la deuxième div en utilisant l'opacité
+//     document.getSelection('clickEventBox').style.opacity = '1';
+
+//     // Après la transition (1s), cacher complètement la première div
+//     setTimeout1(() => {
+//         document.getSelection('containerr').style.display = 'none';
+//     }, 5000); // 1000 millisecondes = 1 seconde, correspond à la durée de la transition
+// }, 5000); // 5000 millisecondes = 5 secondes
+
+hidden.addEventListener('click', () => {
+    console.log(hidden);
+    
+})
