@@ -4,6 +4,8 @@ const btn2 = document.getElementById('btn-2');
 const btn3 = document.getElementById('btn-3');
 const btn4 = document.getElementById('btn-4');
 const response = document.querySelector('p');
+const hidden = document.querySelector('.boite')
+// const boxx = document.getSelection('box')
 
 // Nombre initial d'essais
 let remainingAttempts = 3;
@@ -41,14 +43,46 @@ btn1.addEventListener('click', () => {
 });
 
 // Ajout des événements pour les mauvaises réponses
+
+// const wrongButtons = [btn2, btn3, btn4];
+// wrongButtons.forEach(button => {
+//     button.addEventListener('click', handleWrongAnswer);
+
 const wrongButtons = [btn2, btn3, btn4];
 wrongButtons.forEach(button => {
-    button.addEventListener('click', handleWrongAnswer);
+    button.addEventListener('click', () => {
+        handleWrongAnswer();
+        button.disabled = true; // Désactive le bouton après un clic
+    });
 });
+
+// });
 
 // Ajout de l'événement pour le conteneur de la question
 questionContainer.addEventListener('click', () => {
     questionContainer.classList.toggle('question-clicked');
-    questionContainer.classList.toggle('erreur');
+    questionContainer.classList.add('erreur');
+    
 });
 
+// setTimeout(() => {
+//     // Faire disparaître la première div en utilisant l'opacité
+//     document.getSelection('containerr').style.opacity = '0';
+//     // console.log(containerr);
+    
+    
+//     // Faire apparaître la deuxième div en utilisant l'opacité
+//     document.getSelection('clickEventBox').style.opacity = '1';
+
+//     // Après la transition (1s), cacher complètement la première div
+//     setTimeout1(() => {
+//         document.getSelection('containerr').style.display = 'none';
+//     }, 5000); // 1000 millisecondes = 1 seconde, correspond à la durée de la transition
+// }, 5000); // 5000 millisecondes = 5 secondes
+
+
+
+hidden.addEventListener('click', () => {
+    hidden.classList.remove('boxx')
+    
+});
