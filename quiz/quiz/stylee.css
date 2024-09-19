@@ -447,3 +447,10 @@ p {
   
 }
 
+.boite {
+  display: none;
+}
+
+.box {
+  display: none;
+}

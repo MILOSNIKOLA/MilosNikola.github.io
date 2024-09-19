@@ -5,6 +5,7 @@ const btn3 = document.getElementById('btn-3');
 const btn4 = document.getElementById('btn-4');
 const response = document.querySelector('p');
 const start = document.querySelector('.button');
+
 const hidden = document.querySelector('.boite')
 // const boxx = document.getSelection('box')
 
@@ -89,6 +90,7 @@ start.addEventListener('click', () => {
 
 
 hidden.addEventListener('click', () => {
-   hidden.style.display = none;
+   hidden.style.display = '';
     
 });
+// .display = 'none';
