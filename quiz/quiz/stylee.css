@@ -397,14 +397,53 @@ p {
   background-color: #000;
 } 
 
-.boxx {
+/* .boxx {
  
+} */
+
+.start {
+  /* margin: 0;
+  padding: 0;
+  visibility: hidden; */
 }
 
-.intr {
-  position: relative;
-  top: 250px;
-  z-index: 100;
-  text-decoration:1px white solid;
-  font-size: 50px;
+.button{
+  
 }
+
+.button {
+  position: relative;
+  top: 50px;
+  /* z-index: -100; */
+  visibility: visible;
+  font-size: 50px;
+  padding:0 10px;
+}
+
+.starttt {
+  color: #fff;
+  background: #000;
+  animation: sta 5s ease-in-out forwards;
+  
+}
+
+
+@keyframes sta {
+  0% {
+    opacity: 100%
+  }
+  25% {
+    opacity: 75%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 25%;
+  }
+  100% {
+    opacity: 0%; 
+  }
+  
+}
+

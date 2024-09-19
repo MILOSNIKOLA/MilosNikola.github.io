@@ -4,6 +4,7 @@ const btn2 = document.getElementById('btn-2');
 const btn3 = document.getElementById('btn-3');
 const btn4 = document.getElementById('btn-4');
 const response = document.querySelector('p');
+const start = document.querySelector('.button');
 const hidden = document.querySelector('.boite')
 // const boxx = document.getSelection('box')
 
@@ -80,9 +81,14 @@ questionContainer.addEventListener('click', () => {
 //     }, 5000); // 1000 millisecondes = 1 seconde, correspond à la durée de la transition
 // }, 5000); // 5000 millisecondes = 5 secondes
 
+start.addEventListener('click', () => {
+    start.classList.add('starttt')
+    start.disabled = true;
+})
+
 
 
 hidden.addEventListener('click', () => {
-    hidden.classList.remove('boxx')
+   hidden.style.display = none;
     
 });
