@@ -83,14 +83,18 @@ questionContainer.addEventListener('click', () => {
 // }, 5000); // 5000 millisecondes = 5 secondes
 
 start.addEventListener('click', () => {
-    start.classList.add('starttt')
-    start.disabled = true;
+    start.classList.add('starttt');
+    hidden.style.display = 'block';
+    // start.style.display = 'none'
+    // start.disabled = true;
 })
 
 
 
 hidden.addEventListener('click', () => {
-   hidden.style.display = '';
-    
+   hidden.style.display = 'block';
+   setTimeout(function() {
+    document.querySelector('.boite').classList.add('boite');
+  }, 3000); // 3000 millisecondes = 3 secondes
 });
 // .display = 'none';

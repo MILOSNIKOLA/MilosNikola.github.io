@@ -11,7 +11,7 @@ body {
     text-align: center;
     margin: 0;
     color: #fff;
-    min-height: 200vh;
+    /* min-height: 200vh; */
     background: rgb(0, 0, 0);
 }
 
@@ -397,33 +397,32 @@ p {
   background-color: #000;
 } 
 
-/* .boxx {
- 
-} */
-
-.start {
-  /* margin: 0;
-  padding: 0;
-  visibility: hidden; */
-}
-
 .button{
   
 }
 
 .button {
   position: relative;
-  top: 50px;
+  top: 300px;
   /* z-index: -100; */
   visibility: visible;
   font-size: 50px;
-  padding:0 10px;
+  padding:15px 20px;
+  border-radius: 20px;
+}
+
+.button:hover {
+  padding: 25px;
+  transition: ease-out .5s;
+  background: #000;
+  color: #fff;
+  font: 35px sans-serif;
 }
 
 .starttt {
   color: #fff;
   background: #000;
-  animation: sta 5s ease-in-out forwards;
+  animation: sta 2s ease-in-out forwards;
   
 }
 
@@ -449,7 +448,35 @@ p {
 
 .boite {
   display: none;
+  animation: boite 5s ease-in-out forwards;
+  /* animation-delay:3s; */
 }
+
+
+
+@keyframes boite {
+  0% {
+    opacity: 0%
+  }
+  20% {
+    opacity: 0.5%;
+  }
+  30%{
+    opacity: 15%;
+  }
+  50% {
+    opacity: 20%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%; 
+  }
+  
+}
+
+
 
 .box {
   display: none;
