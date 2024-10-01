@@ -397,9 +397,9 @@ p {
   background-color: #000;
 } 
 
-.button{
+/* .button{
   
-}
+} */
 
 .button {
   position: relative;
@@ -422,33 +422,33 @@ p {
 .starttt {
   color: #fff;
   background: #000;
-  animation: sta 2s ease-in-out forwards;
+  animation: sta 1s ease-in-out forwards;
   
 }
 
 
 @keyframes sta {
   0% {
-    opacity: 100%
+    opacity: 1
   }
   25% {
-    opacity: 75%;
+    opacity: 0.75;
   }
   50% {
-    opacity: 50%;
+    opacity: 0.5;
   }
   75% {
-    opacity: 25%;
+    opacity: 0.25;
   }
   100% {
-    opacity: 0%; 
+    opacity: 0; 
   }
   
 }
 
 .boite {
   display: none;
-  animation: boite 5s ease-in-out forwards;
+  animation: boite 7s ease-in-out forwards;
   /* animation-delay:3s; */
 }
 

@@ -7,7 +7,7 @@ const response = document.querySelector('p');
 const start = document.querySelector('.button');
 
 const hidden = document.querySelector('.boite')
-// const boxx = document.getSelection('box')
+const boksi = document.getSelection('.box')
 
 // Nombre initial d'essais
 let remainingAttempts = 3;
@@ -95,6 +95,17 @@ hidden.addEventListener('click', () => {
    hidden.style.display = 'block';
    setTimeout(function() {
     document.querySelector('.boite').classList.add('boite');
-  }, 3000); // 3000 millisecondes = 3 secondes
+  }, 3000);
+   // 3000 millisecondes = 3 secondes
 });
 // .display = 'none';
+
+// questionContainer.addEventListener('', () => {
+//     questionContainer.add('question-clicked');
+//     questionContainer.style.display = 'block';
+// });
+
+boksi.addEventListener('', () => {
+   b
+   
+})
