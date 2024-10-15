@@ -96,6 +96,8 @@ hidden.addEventListener('click', () => {
    setTimeout(function() {
     document.querySelector('.boite').classList.add('boite');
   }, 3000);
+
+  
    // 3000 millisecondes = 3 secondes
 });
 // .display = 'none';
@@ -105,7 +107,8 @@ hidden.addEventListener('click', () => {
 //     questionContainer.style.display = 'block';
 // });
 
-boksi.addEventListener('', () => {
-   b
-   
-})
+
+
+
+
+
